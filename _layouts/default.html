@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="White-Box Cryptography : Protecting Cryptographic Keys in Software">
 
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="stylesheets/slim-pickins.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>White-Box Cryptography</title>
@@ -13,12 +14,63 @@
 
   <body>
 
+
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
           <h1 id="project_title">White-Box Cryptography</h1>
           <h2 id="project_tagline">Protecting Cryptographic Keys in Software</h2>
         </header>
+  	<!-- NAVBAR -->
+	<!-- inspired by https://raw.githubusercontent.com/chrisanthropic/slim-pickins-jekyll-theme/gh-pages/index.html -->
+	<nav class="navbar">
+	<nav class="row">
+		<div id="nav">
+			<ul class="columns medium-8 left primary-nav">
+				<li id="toggleMenu"><a href="#nav">Menu</a></li> 
+				<li id="hideMenu"><a href="#toggleMenu">Menu</a></li>
+
+		  {% if page.menu == 'home' %}
+			<li class="active"><A href="index.html" class="active">Home</A></li>
+		  {% else %}
+		  	<li><A href="index.html">Home</A></li>
+		  {% endif %}
+
+		  {% if page.menu == 'news' %}
+			<li class="active"><A href="news.html" class="active">News</A></li>
+		  {% else %}
+		  	<li><A href="news.html">News</A></li>
+		  {% endif %}
+
+		  {% if page.menu == 'research' %}
+			<li class="active"><A href="research.html" class="active">Research</A></li>
+		  {% else %}
+		  	<li><A href="research.html">Research</A></li>
+		  {% endif %}
+
+		  {% if page.menu == 'practical' %}
+			<li class="active"><A href="practical.html" class="active">In practice</A></li>
+		  {% else %}
+		  	<li><A href="practical.html">In practice</A></li>
+		  {% endif %}
+
+		  {% if page.menu == 'challenges' %}
+			<li class="active"><A href="challenges.html" class="active">Challenges</A></li>
+		  {% else %}
+		  	<li><A href="challenges.html">Challenges</A></li>
+		  {% endif %}
+
+		  {% if page.menu == 'about' %}
+			<li class="active"><A href="about.html" class="active">About</A></li>
+		  {% else %}
+		  	<li><A href="about.html">About</A></li>
+		  {% endif %}
+
+		  </div>
+	  </ul>
+
+	</nav>
+</nav>
     </div>
 
     <!-- MAIN CONTENT -->
